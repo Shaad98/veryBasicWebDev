@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="cellspacing and cellpadding example">
+    <meta name="keywords" content="html table, cellspacing, cellpadding">
+    <meta name="robots" content="index, follow">
+    <title>Document</title>
+</head>
+<body>
+    <!-- The attribute border is depricated insted of thsis we use css -->
+    <table border="1" cellspacing="20" cellpadding="20">
+        <tr>
+            <th>Name</th>
+            <th>Marks</th>
+        </tr>
+        <tr>
+            <td>Shaad</td>
+            <td>100</td>
+        </tr>
+        <tr>
+            <td>Moin</td>
+            <td>98</td>
+        </tr>
+    </table>
+    <!-- To use inline CSS for styling the table and its elements, you can add the `style` attribute to the HTML tags. Here's how you can update your HTML to remove the deprecated `border` attribute and use inline CSS instead: -->
+
+
+    <!-- The attribute border is deprecated instead we use CSS -->
+    <table style="border-collapse: collapse; border: 1px solid black; width: 100%;">
+        <!-- The <caption> tag is added immediately after the opening <table> tag.
+            Inline CSS is used with the <caption> tag to style it, making the caption bold and slightly larger than the default font size. The caption-side: top; ensures that the caption is displayed above the table (which is the default behavior). -->
+        <caption style="caption-side: top; font-weight: bold; font-size: 1.2em;">Student Marks</caption>
+        <tr>
+            <th style="border: 1px solid black; padding: 20px;">Name</th>
+            <th style="border: 1px solid black; padding: 20px;">Marks</th>
+        </tr>
+        <tr>
+            <td style="border: 1px solid black; padding: 20px;">Shaad</td>
+            <td style="border: 1px solid black; padding: 20px;">100</td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid black; padding: 20px;">Moin</td>
+            <td style="border: 1px solid black; padding: 20px;">98</td>
+        </tr>
+    </table>
+</body>
+
+<!-- Changes made:
+- Added `style="border-collapse: collapse; border: 1px solid black; width: 100%;"` to the `<table>` tag to handle table borders and layout.
+- Added `style="border: 1px solid black; padding: 20px;"` to `<th>` and `<td>` tags to apply borders and padding (equivalent to `cellspacing` and `cellpadding`). -->
+
+
+</html>
